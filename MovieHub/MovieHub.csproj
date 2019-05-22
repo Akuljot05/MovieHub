@@ -243,9 +243,18 @@
     <Compile Include="Migrations\201905221419473_AddDataAnnotationToNameOfMembershipType.Designer.cs">
       <DependentUpon>201905221419473_AddDataAnnotationToNameOfMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905221428283_AddMoviesDbSetToIdentityModel.cs" />
+    <Compile Include="Migrations\201905221428283_AddMoviesDbSetToIdentityModel.Designer.cs">
+      <DependentUpon>201905221428283_AddMoviesDbSetToIdentityModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905221432110_AddGenreClassToModelandGenreTypeToMovie.cs" />
+    <Compile Include="Migrations\201905221432110_AddGenreClassToModelandGenreTypeToMovie.Designer.cs">
+      <DependentUpon>201905221432110_AddGenreClassToModelandGenreTypeToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -365,6 +374,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905221419473_AddDataAnnotationToNameOfMembershipType.resx">
       <DependentUpon>201905221419473_AddDataAnnotationToNameOfMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905221428283_AddMoviesDbSetToIdentityModel.resx">
+      <DependentUpon>201905221428283_AddMoviesDbSetToIdentityModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905221432110_AddGenreClassToModelandGenreTypeToMovie.resx">
+      <DependentUpon>201905221432110_AddGenreClassToModelandGenreTypeToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
