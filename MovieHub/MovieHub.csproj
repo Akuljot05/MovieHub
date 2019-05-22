@@ -227,6 +227,14 @@
     <Compile Include="Migrations\201905221221112_RemoveExtraMembershipeTypeIdColumn.Designer.cs">
       <DependentUpon>201905221221112_RemoveExtraMembershipeTypeIdColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905221400094_AddNamePropertyToMembershipType.cs" />
+    <Compile Include="Migrations\201905221400094_AddNamePropertyToMembershipType.Designer.cs">
+      <DependentUpon>201905221400094_AddNamePropertyToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905221401294_PopulateNameMembershipType.cs" />
+    <Compile Include="Migrations\201905221401294_PopulateNameMembershipType.Designer.cs">
+      <DependentUpon>201905221401294_PopulateNameMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -337,6 +345,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905221221112_RemoveExtraMembershipeTypeIdColumn.resx">
       <DependentUpon>201905221221112_RemoveExtraMembershipeTypeIdColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905221400094_AddNamePropertyToMembershipType.resx">
+      <DependentUpon>201905221400094_AddNamePropertyToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905221401294_PopulateNameMembershipType.resx">
+      <DependentUpon>201905221401294_PopulateNameMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
