@@ -11,23 +11,22 @@ namespace MovieHub.Controllers
     public class MovieController : Controller
     {
         // GET: Movie
-        public ActionResult Random()
+        public ActionResult Index()
         {
-            var movie = new Movie() { Name = "Shrek!" };
-            var customers = new List<Customer>
-            {
-                new Customer { Name = "Customer 1" },
-                new Customer { Name = " Customer 2" }
-            };
-
-            var viewModel = new RandomMovieViewModel
-            {
-                Movie = movie,
-                Customers = customers
-            }; 
-
-            return View(viewModel);
+            var movies = GetMovies();
+            return View(movies);
         }
+
+        private IEnumerable<Movie> GetMovies()
+        {
+            return new List<Movie>
+            {
+                 new Movie { Id = 1, Name = "Shrek!" },
+                 new Movie { Id = 1, Name = "Wall-e" }
+            };
+           
+        }
+
 
         
     }
