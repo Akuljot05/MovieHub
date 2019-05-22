@@ -239,6 +239,10 @@
     <Compile Include="Migrations\201905221413029_AddBirthdatePropertyToCustomers.Designer.cs">
       <DependentUpon>201905221413029_AddBirthdatePropertyToCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905221419473_AddDataAnnotationToNameOfMembershipType.cs" />
+    <Compile Include="Migrations\201905221419473_AddDataAnnotationToNameOfMembershipType.Designer.cs">
+      <DependentUpon>201905221419473_AddDataAnnotationToNameOfMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -358,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905221413029_AddBirthdatePropertyToCustomers.resx">
       <DependentUpon>201905221413029_AddBirthdatePropertyToCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905221419473_AddDataAnnotationToNameOfMembershipType.resx">
+      <DependentUpon>201905221419473_AddDataAnnotationToNameOfMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
