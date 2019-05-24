@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Data.Entity;
 using MovieHub.Models;
 using MovieHub.Dtos;
 using AutoMapper;
@@ -23,7 +24,9 @@ namespace MovieHub.Controllers.Api
         [HttpGet]
         public IHttpActionResult GetCustomers()
         {
-            return Ok(_context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>));
+            var customers = _context.Customers.Include(c=>c.MembershipType).ToList().Select(Mapper.Map<Customer, CustomerDto>);
+            
+            return Ok(customers);
         }
 
         // GET /api/customers/1
