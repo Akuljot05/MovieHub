@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Web.Http;
 using AutoMapper;
 using MovieHub.Dtos;
+using System.Data.Entity;
 
 namespace MovieHub.Controllers.Api
 {
@@ -22,7 +23,8 @@ namespace MovieHub.Controllers.Api
         [HttpGet]
         public IHttpActionResult GetMovies()
         {
-            return Ok(_context.Movies.ToList().Select(Mapper.Map<Movie, MovieDto>));
+            var movies = _context.Movies.Include(m => m.Genre).ToList().Select(Mapper.Map<Movie, MovieDto>);
+            return Ok(movies);
         }
 
         [HttpGet]
