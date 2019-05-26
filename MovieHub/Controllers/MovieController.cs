@@ -37,6 +37,7 @@ namespace MovieHub.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Save(Movie movie)
         {
             if(!ModelState.IsValid)
@@ -67,6 +68,7 @@ namespace MovieHub.Controllers
             return RedirectToAction("Index", "Movie");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
@@ -80,7 +82,7 @@ namespace MovieHub.Controllers
 
             return View("MovieForm", viewModel);
         }
-    
+
         public ActionResult Index()
         {
             if (User.IsInRole(RoleName.CanManageMovies))
