@@ -54,9 +54,9 @@ namespace MovieHub
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "334141063929740",
+               appSecret: "3f2186eb6c64af66a0f9acbc87f1a5d8");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
