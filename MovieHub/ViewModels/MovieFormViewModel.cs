@@ -33,6 +33,8 @@ namespace MovieHub.ViewModels
         [Required]
         public byte? NumberInStock { get; set; }
 
+        public int NumberAvailable { get; set; }
+
         public string Title
         {
             get

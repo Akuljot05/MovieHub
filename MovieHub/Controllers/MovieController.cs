@@ -27,12 +27,16 @@ namespace MovieHub.Controllers
         [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
-            var genres = _context.Genres.ToList();
-            var viewModel = new MovieFormViewModel
             {
-                Genres = genres
-            };
-            return View("MovieForm", viewModel);
+                var genres = _context.Genres.ToList();
+
+                var viewModel = new MovieFormViewModel
+                {
+                    Genres = genres
+                };
+
+                return View("MovieForm", viewModel);
+            }
         }
 
         [HttpPost]
@@ -52,7 +56,8 @@ namespace MovieHub.Controllers
 
             if (movie.Id == 0)
             {
-                 movie.DateAdded = DateTime.Now;
+                movie.NumberAvailable = movie.NumberInStock;            
+                movie.DateAdded = DateTime.Now;
                 _context.Movies.Add(movie);
             }
             else
@@ -61,6 +66,7 @@ namespace MovieHub.Controllers
                 movieInDb.Name = movie.Name;
                 movieInDb.ReleaseDate = movie.ReleaseDate;
                 movieInDb.NumberInStock = movie.NumberInStock;
+                movieInDb.NumberAvailable = movie.NumberInStock;
                 movieInDb.GenreId = movie.GenreId;
             }
 
