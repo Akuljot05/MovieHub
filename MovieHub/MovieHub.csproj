@@ -349,6 +349,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-home.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.min.css" />
     <Content Include="Content\DataTables\css\autoFill.dataTables.css" />
@@ -456,6 +457,9 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\Images\erik-witsoe-647316-unsplash.jpg" />
+    <Content Include="Content\Images\ethan-hu-797486-unsplash.jpg" />
+    <Content Include="Content\Images\kilyan-sockalingum-478724-unsplash.jpg" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="Content\typeahead.css" />
